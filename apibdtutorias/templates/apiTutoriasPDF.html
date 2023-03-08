@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Lista de tutores</h2>
+    <h3>Cantidad tutores: {{ cantidadtutores }}</h3>
+    <table style="border: 1px solid #000;">
+        <thead>
+            <th>RFC</th>
+            <th>PERIODO</th>
+            <th>CARRERA</th>
+        </thead>
+        <tbody>
+            {% for tutor in tutores %}
+            <tr>
+                <td>{{ tutor.rfc }}</td>
+                <td>{{ tutor.periodo }}</td>
+                <td>{{ tutor.carrera }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>
