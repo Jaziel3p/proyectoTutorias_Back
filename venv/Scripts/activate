@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\jazie\Documents\Tecnologico\Semestre-8\07-Servicio Social\Proyecto_tutorias_back\apiproyecto\BDTutoriasAPI\venv"
+VIRTUAL_ENV="D:\SEMESTRES\SEMESTRES\SERVICIO SOCIAL\Proyectos\ProyectoTutorias\Back-End\proyectoTutorias_Back\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
