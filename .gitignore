@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 BDTutoriasAPI/setting.py
+=======
+proyectoTutorias_Back/setting.py
+>>>>>>> 5f88ef46cc630a7fb005fcba834dead2ddef9f34
 venv
 **/__pycache__
 **/migrations
