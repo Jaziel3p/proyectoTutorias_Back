@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Semestral del Tutor</title>
+    <link rel="stylesheet" href="../static/apibdtutorias/css/reporteTutor.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div id="logo_sep"><img src={{SEP_url}}></div>
+        <h3>TECNOLÓGICO NACIONAL DE MÉXICO <br> INSTITUTO TECNOLÓGICO DE ACAPULCO <br> REPORTE SEMESTRAL DEL TUTOR</h3>
+        <div id="logo_ita"><img src={{ITA_url}}></div>
+    </header>
+
+    <section>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7" class="alinear-izq">Nombre del Tutor:</th>
+                        <th class="alinear-izq">Fecha:</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3" class="alinear-izq">Programa Educativo: {{cantidadtutores}}</th>
+                        <th colspan="4" class="alinear-izq">Grupo:</th>
+                        <th class="alinear-izq">Hora:</th>
+                    </tr>
+
+                    <tr class="thead__sec">
+                        <th rowspan="2" colspan="3" style="width: 57%;">Lista de estudiantes</th>
+                        <th colspan="2" style="width: 25%;">Estudiantes atendidos en el semestre</th>
+                        <th rowspan="2" style="width: 7%;">Estudiantes canalizados en el semestre</th>
+                        <th style="width: 7%;">Total de horas acumuladas</th>
+                        <th rowspan="2" style="width: 15%;">Área canalizada</th>
+                    </tr>
+
+                    <tr class="thead__sec">
+                        <th style="width: 7%;">Tutoria grupal</th>
+                        <th style="width: 7%;">Tutoria individual</th>
+                        <th>Ago-Dic 2022</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>22320812</td>
+                        <td>MIRANDA MORALES LUIS ALBERTO</td>
+                        <td>14</td>
+                        <td>11</td>
+                        <td>1</td>
+                        <td>18</td>
+                        <td>Beca inscripción</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="8">
+                            <strong> Instructivo de llenado:</strong>
+                            En el apartado de Observaciones anotar:
+                            Anote las 10 actividades adicionales más importantes realizadas en el semestre
+                            Anotar las acciones de mayor impacto para alcanzar la competencia de la asignatura
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="8">
+                            Observaciones: De acuerdo al PAT: (1) se dieron 5 horas del curso de inducción el 13
+                            septiembre de manera
+                            presencial.
+                            (2) Llevé acabo 14 sesiones grupales: La línea de la vida, el análisis FODA, estilos de
+                            aprendizaje, Administración
+                            del
+                            tiempo, el ser humano integral y desarrollo de habilidades del pensamiento. (3) En las
+                            entrevistas individuales se
+                            detectaron problemas sobre todo económicos, se hicieron compromisos de mejora de hábitos de
+                            estudio y se les dió
+                            seguimiento a esos compromisos. (4) Se les solicitó realizar el trámite del IMSS para que
+                            tuvieran su carnet
+                            vigente.
+                            (5) Se le solicitaron las calificaciones parciales de las materias que estaban cursando y su
+                            boleta de fin de
+                            semestre.
+                            (6) Las evidencias de las actividades se llevaron a cabo a través de la plataforma TEAMS y
+                            presenciales. <strong>Evaluación
+                                del
+                                impacto: La acción tutorial a estudiantes en el programa de tutorías, registra un
+                                impacto
+                                favorable en la eficiencia
+                                académica; ya que el índicador índice de deserción se registra en 0%, es decir de los 26
+                                estudiantes atendidos el
+                                100%
+                                se encuentran status activo.</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pie__firmas">
+                <div>
+                    <p><u>Ing. Daniel Solis Montes</u></p>
+                    <p>Nombre y Firma</p>
+                    <p>Coordinador de Tutorias de </p>
+                </div>
+
+                <div>
+                    <p><u>###</u></p>
+                    <p>Nombre y Firma</p>
+                    <p>Jefe del Departamento Academico</p>
+                </div>
+            </div>
+
+            <div class="pie__firmas">
+                <div>
+                    <p><u>###</u></p>
+                    <p>Nombre y Firma</p>
+                    <p>Jefe del Departamento Academico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
