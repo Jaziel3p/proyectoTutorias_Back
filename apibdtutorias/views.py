@@ -15,6 +15,8 @@ from django.conf import settings
 
 from BDTutoriasAPI import settings
 
+from BDTutoriasAPI import settings
+
 from .models import Tutor
 import json 
 import os
@@ -95,6 +97,8 @@ class ListTuturesPDF(View):
         template = get_template("reporteTutor.html")
         html = template.render(data)
         css_url = './apibdtutorias/static/apibdtutorias/css/reporteTutor.css'
+
+        pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
 
         pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
 
