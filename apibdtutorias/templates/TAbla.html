@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{CSS_url}}">
+  </head>
+<body >
+  <div class="table-container">
+  <table>
+    <tr>
+      <td colspan="2" class="td img">
+        <img src="{{ SEP_url}}" alt="SEP">
+      </td>
+      <td colspan="4" style="text-align: center;"><strong> TECNOLÓGICO NACIONAL DE MÉXICO</strong> <br>
+        <strong>INSTITUTO TECNOLÓGICO DE ACAPULCO</strong> <br>
+          <strong>REPORTE SEMESTRAL DEL TUTOR </strong></td> 
+      <td colspan="2" style="text-align: right;">
+        <img src="{{ ITA_url }}" alt="ITA">
+      </td>
+    </tr>
+  </table>
+  <div>
+    
+    <table>
+  <thead >
+      <tr>
+    <td colspan="7" > <strong>Nombre del Tutor:</strong> </td>
+    <td style="margin: auto; font-size: 0.35cm; width: 4cm;">Fecha: SEMESTRE AGOSTO-DICIEMBRE 2022</td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong> Programa educativo: ING. EN SIST. COMP</strong></td>
+    <td colspan="4"><strong>Grupo: </strong> </td>
+    <td>Hora: </td>
+  </tr>
+<tr class="grey-background">
+    <td rowspan="2" colspan="3">Lista de estudiantes</td>
+    <td colspan="2">Estudiantes atendidos en el semestre </td>
+    <td rowspan="2">Estudiantes canalizados en el semestre</td>
+    <td>Total de horas acumuladas</td>
+    <td rowspan="2">Área canalizada </td>
+  </tr>
+  <tr class="grey-background">
+    <td>Tutoría grupal</td>
+    <td>Tutoría individual</td>
+    <td>Agosto-dic 2022</td>
+  </tr>
+  </thead>
+  
+  </div>
+<tbody class="tbBorde">
+  {% for tutor in tutores %}
+  <tr style="font-size: 10pt;" >
+    
+    <td style="width: 0cm; text-align: center;">{{ tutor.rfc }}</td>
+    <td style="width: auto; text-align: center;">{{ tutor.periodo }}</td>
+    <td style="width: auto;">{{ tutor.carrera }}</td>
+    <td style="width: auto; text-align: center;">##</td>
+    <td style="width: auto; text-align: center;">##</td>
+    <td style="width: auto; text-align: center;">##</td>
+    <td style="width: auto; text-align: center;">##</td>
+    <td style="width: auto; ">##</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  <tfoot class="noRepetir tfBorde">
+  <tr>
+    <td colspan="8" style= 'font-size: 8pt'> <strong>Instructivo de llenado: <br></strong>
+       En el apartado de Observaciones anotar: <br>
+       Anote las 10 actividades adicionales más importantes realizadas en el semestre <br>
+       Anotar las acciones de mayor impacto para alcanzar la competencia de la asignatura
+      </td>
+  </tr>
+  <tr>
+    <td colspan="8" style="text-align: justify; font-size: 10pt;">
+      Observaciones: De acuerdo al PAT: (1) se dieron 5 horas del curso de inducción el 13 septiembre de manera presencial. (2) Llevé acabo 14 sesiones grupales: La línea
+de la vida, el análisis FODA, estilos de aprendizaje, Administración del tiempo, el ser humano integral y desarrollo de habilidades del pensamiento. (3) En las
+entrevistas individuales se detectaron problemas sobre todo económicos, se hicieron compromisos de mejora de hábitos de estudio y se les dió seguimiento a esos
+compromisos. (4) Se les solicitó realizar el trámite del IMSS para que tuvieran su carnet vigente. (5) Se le solicitaron las calificaciones parciales de las materias que
+estaban cursando y su boleta de fin de semestre. (6) Las evidencias de las actividades se llevaron a cabo a través de la plataforma TEAMS y presenciales. <strong> Evaluación
+del impacto: La acción tutorial a estudiantes en el programa de tutorías, registra un impacto favorable en la eficiencia académica; ya que el índicador índice de
+deserción se registra en 0%, es decir de los 26 estudiantes atendidos el 100% se encuentran status activo. </strong>
+    </td>
+  </tr>
+</tfoot>
+</table>
+<div>
+  <table >
+    <tr>
+      <td>Fecha de entrega de este reporte: 4 enero 2023</td>
+    </tr>
+  </table>
+</div>
+<br><br>
+<pagebreak>
+<div>
+  <table>
+    <tr >
+      <td style="text-align: center; font-size: 11pt;">ING. ELOISA MERCEDES VIVAS VILLASANA</td>
+      <td style="text-align: center;font-size: 11pt;">ING. DANIEL SOLÍS CHÁVEZ
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><div style="border-top: 0.07cm solid black; width: 75%; display: inline-block; vertical-align: top;"></div></td>
+      <td style="text-align: center;"><div style="border-top: 0.07cm solid black; width: 75%; display: inline-block; vertical-align: top;"></div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Nombre y firma</td>
+      <td style="text-align: center">Nombre y firma</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Coordinadora de Tutorías de ISC</td>
+      <td style="text-align: center">Jefe de Departamento Académico</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top: 5%">DRA. ELEAZAR PACHECO SALAZAR</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top: -15%"><div style="border-top: 0.07cm solid black; width: 37.5%; display: inline-block; vertical-align: top;"></div></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">Nombre y firma</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">Tutor</td>
+    </tr>
+    <tr>
+      <td>ccp Tutor</td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>
