@@ -1,3 +1,4 @@
+from pathlib import Path
 from django.http import HttpResponse
 from django.http.response import JsonResponse
 from django.utils.decorators import method_decorator
@@ -6,8 +7,10 @@ from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 
 from django.template.loader import get_template
-from weasyprint import HTML
+from weasyprint import CSS, HTML
 from django.http import HttpResponse
+
+from BDTutoriasAPI import settings
 
 from .models import Tutor
 import json 
@@ -73,12 +76,20 @@ class TutorView(View):
 class ListTuturesPDF(View):
     def get(self, request, *args, **kwargs):
         tutores = Tutor.objects.all()
+
+        SEP_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias' / 'static' / 'img' / 'SEP.jpg'
+        ITA_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias' / 'static' / 'img' / 'ITA2.png'
+
         data = {
             'tutores': tutores,
-            'cantidadtutores': tutores.count()
+            'cantidadtutores': tutores.count(),
+            'SEP_url': SEP_path.as_uri(),
+            'ITA_url': ITA_path.as_uri(),
         }
-        template = get_template("apiTutoriasPDF.html")
+        template = get_template("reporteTutor.html")
         html = template.render(data)
-        pdf = HTML(string=html).write_pdf()
+        css_url = './apibdtutorias/static/apibdtutorias/css/reporteTutor.css'
+
+        pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
 
         return HttpResponse(pdf, content_type='application/pdf')
