@@ -104,7 +104,7 @@ class ListTuturesPDFCH(View):
     def get(self, request, *args, **kwargs):
         tutores = Tutor.objects.all()
         SEP_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias'/'static' / 'img' / 'SEP.jpg'
-        ITA_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias'/'static' / 'img' / 'ITA.png'
+        ITA_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias'/'static' / 'img' / 'ITA2.png'
         css_url = './apibdtutorias/static/apibdtutorias/css/estilos.css'
         data = {
             'tutores': tutores,
