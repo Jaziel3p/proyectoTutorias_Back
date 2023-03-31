@@ -1,0 +1,84 @@
+@page {
+    margin: 1.5cm;
+    margin-top: 1cm;
+    size: 21.59cm 27.94cm;
+
+    @bottom-right {
+        content: counter(page);
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    background-color: rgb(118, 210, 75);
+}
+
+.cabecera__cont-titulo {
+    width: 60%;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid darkblue;
+    background-color: rgb(210, 203, 75);
+}
+
+.cabecera__cont-logo_ita {
+    background-color: antiquewhite;
+    width: 20%;
+    height: 60px;
+    border: 2px solid darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera__cont-logo_sep {
+    width: 20%;
+    height: 50px;
+    background-color: antiquewhite;
+    border: 2px solid darkblue;
+}
+
+img {
+    border: 2px solid rgb(139, 0, 0);
+    max-width: 100%;
+    max-height: 100%;
+}
+#img_ita {
+    margin-left: 30px;
+    /* border: 2px solid rgb(132, 19, 134); */
+}
+
+table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.1rem 0.4rem;
+}
+
+.alinear-izq {
+    text-align: left;
+}
+
+thead {
+    font-size: 0.8em;
+}
+
+.thead__sec th {
+    font-weight: normal;
+}
+
+tbody {
+    font-size: 0.6em;
+}
+
+.pie__firmas {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
