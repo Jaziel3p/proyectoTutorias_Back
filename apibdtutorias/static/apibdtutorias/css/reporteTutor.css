@@ -17,22 +17,22 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1em;
-    background-color: rgb(118, 210, 75);
+    /* background-color: rgb(118, 210, 75); */
 }
 
 .cabecera__cont-titulo {
     width: 60%;
     text-align: center;
     font-size: 1em;
-    border: 2px solid darkblue;
-    background-color: rgb(210, 203, 75);
+    /*border: 2px solid darkblue;
+    background-color: rgb(210, 203, 75);*/
 }
 
 .cabecera__cont-logo_ita {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 20%;
     height: 60px;
-    border: 2px solid darkblue;
+    /* border: 2px solid darkblue; */
     display: flex;
     justify-content: center;
 }
@@ -40,12 +40,12 @@ body {
 .cabecera__cont-logo_sep {
     width: 20%;
     height: 50px;
-    background-color: antiquewhite;
-    border: 2px solid darkblue;
+    /* background-color: antiquewhite; */
+    /* border: 2px solid darkblue; */
 }
 
 img {
-    border: 2px solid rgb(139, 0, 0);
+    /* border: 2px solid rgb(139, 0, 0); */
     max-width: 100%;
     max-height: 100%;
 }
