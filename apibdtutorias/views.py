@@ -100,8 +100,6 @@ class ListTuturesPDF(View):
 
         pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
 
-        pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
-
         return HttpResponse(pdf, content_type='application/pdf')
     
 class ListTuturesPDFCH(View):
@@ -123,4 +121,20 @@ class ListTuturesPDFCH(View):
             stylesheets=[CSS(css_url)],
             
         )
+        return HttpResponse(pdf, content_type='application/pdf')
+
+
+class reporteSemestralCoord(View):
+    def get(self, request, *args, **kwargs):
+        css_url = './apibdtutorias/static/apibdtutorias/css/reporteSemestralCoord.css'
+        SEP_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias'/'static' / 'img' / 'SEP.jpg'
+        ITA_path = Path(settings.BASE_DIR) /'.'/'apibdtutorias'/'static' / 'img' / 'ITA2.png'
+        data = {
+            'SEP_url': SEP_path.as_uri(),
+            'ITA_url': ITA_path.as_uri(),
+        }
+        template = get_template("reporteSemestralCoord.html")
+        html = template.render(data)
+        pdf = HTML(string=html).write_pdf(stylesheets=[CSS(css_url)],)
+
         return HttpResponse(pdf, content_type='application/pdf')
