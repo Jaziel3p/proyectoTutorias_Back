@@ -19,7 +19,7 @@
         <strong>INSTITUTO TECNOLÓGICO DE ACAPULCO</strong> <br>
           <strong>REPORTE SEMESTRAL DEL TUTOR </strong></td> 
       <td colspan="2" style="text-align: right;">
-        <img src="{{ ITA_url }}" alt="ITA">
+        <img src="{{ ITA_url }}" alt="{{ ITA_url }}">
       </td>
     </tr>
   </table>
@@ -51,21 +51,28 @@
   </thead>
   
   </div>
-<tbody class="tbBorde">
-  {% for tutor in tutores %}
-  <tr style="font-size: 10pt;" >
+  <tbody class="tbBorde">
+    <!-- iteracion para la creacion del indice -->
     
-    <td style="width: 0cm; text-align: center;">{{ tutor.rfc }}</td>
-    <td style="width: auto; text-align: center;">{{ tutor.periodo }}</td>
-    <td style="width: auto;">{{ tutor.carrera }}</td>
-    <td style="width: auto; text-align: center;">##</td>
-    <td style="width: auto; text-align: center;">##</td>
-    <td style="width: auto; text-align: center;">##</td>
-    <td style="width: auto; text-align: center;">##</td>
-    <td style="width: auto; ">##</td>
-  </tr>
-  {% endfor %}
+    {% for tutor in tutores %}
+    <tr style="font-size: 10pt;">
+      <!-- realizar la vista entre tutorado y horas -->
+      <td style="width: 0cm; text-align: center;">##</td>
+      <td style="width: auto; text-align: center;">{{ tutor.rfc }}</td>
+      <td style="width: auto;">{{ tutor.periodo }}</td>
+      <td style="width: auto; text-align: center;">{{ tutor.carrera }}</td>
+      <td style="width: auto; text-align: center;">##</td>
+      <td style="width: auto; text-align: center;">##</td>
+      <td style="width: auto; text-align: center;">##</td>
+      <td style="width: auto; ">##</td>
+    </tr>
+    
+    {% endfor %}
+    
   </tbody>
+  
+  
+    
   <tfoot class="noRepetir tfBorde">
   <tr>
     <td colspan="8" style= 'font-size: 8pt'> <strong>Instructivo de llenado: <br></strong>

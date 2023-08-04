@@ -58,10 +58,7 @@ td img {
     }*/
 
     body {
-      
       margin: auto;
-      width: 90%;
-      
     }
 
    .table-container {
@@ -69,11 +66,10 @@ td img {
     
     }
     @page {
-      
       margin: auto;
-      width: 100%;
-      height: 92%;
-      /*size: 27.94cm 21.59cm; /*hoja*/
+      width: 19.09cm;
+      height: 25.44cm;
+      size: 21.59cm 27.94cm ; /*hoja*/
     }
 
     tbody.tbBorde > tr > td {
