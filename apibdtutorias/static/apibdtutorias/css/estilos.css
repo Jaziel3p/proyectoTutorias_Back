@@ -1,0 +1,96 @@
+tr.grey-background {
+    background-color: #e0dcdc;
+  }
+ 
+
+/*table {
+      font-family: Calibri, sans-serif;
+      width: 900px;
+      
+    }
+
+th td.special {
+      border: 1px solid black !important;
+    }
+
+/* th .header {
+  border: 1px solid black;
+}
+
+/*.borde{
+    border: 1px solid black;
+  }*/
+
+
+/**/
+.texto-firma {
+  text-align: center;
+  vertical-align: top;
+  margin-top: 0.76cm; /* Puedes ajustar el valor de margen para separar el texto de las líneas de firma */
+}
+
+td img {
+    max-width: 100%;
+    height: 1.58cm;
+    text-align: center;
+  }
+
+    /* Table styling */
+    table {
+       
+      border-collapse: collapse;
+      font-family: Calibri, sans-serif;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    thead td {
+      border: 0.02cm solid #000000;
+      padding: 0.05cm;
+      
+      
+    }
+    
+    /*tbody td {
+      border: 1px solid #000000;
+      padding: 0px;
+    }*/
+
+    body {
+      
+      margin: auto;
+      width: 90%;
+      
+    }
+
+   .table-container {
+    margin-top: 0cm;
+    
+    }
+    @page {
+      
+      margin: auto;
+      width: 100%;
+      height: 92%;
+      /*size: 27.94cm 21.59cm; /*hoja*/
+    }
+
+    tbody.tbBorde > tr > td {
+      border: 0.02cm solid black;
+    }
+
+    tfoot.tfBorde > tr > td {
+      border: 0.02cm solid black;
+      
+    }
+
+    .noRepetirtf
+    {
+      display: table-footer-group;
+    }
+
+    .noRepetirth
+    {
+      display: table-header-group;
+    }
